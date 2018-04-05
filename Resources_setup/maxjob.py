@@ -23,16 +23,16 @@ job.setUserName(data["user"])
 job.setMaxRunningTasks( 5)
 
 # Create a block with provided name and service type
-block = af.Block('maxRender', 'max')
+block = af.Block('max', 'max')
 
 # Set block tasks working directory
 block.setWorkingDirectory('/var/www/html/owncloud/data/'+data["user"]+ '/files'+data["directory"] + '/')
 
 # Set block tasks command
-block.setCommand('max -b \"/var/www/html/owncloud/data/'+ data["user"]+'/files/'+data["file_path"]+'\" -o \"/var/www/html/owncloud/Nube_Multimedia/'+data["pathSave"]+'/img\" -s @#@ -e @#@ -j 1 -a'+".png")
+block.setCommand('3dsmaxcmd \"/var/www/html/owncloud/data/'+ data["user"]+'/files/'+data["file_path"]+'\" -start:@#@ -end:@#@ -nthFrame:1 -v:5 -gammaCorrection:1 -continueOnError -showRFW:0 -o \"/var/www/html/owncloud/Nube_Multimedia/'+data["pathSave"]+'/img.png\"')
 
 # Set block tasks preview command arguments
-block.setFiles(["/var/www/html/owncloud/html/Nube_Multimedia/"+data['pathSave']+"img"])
+block.setFiles(["/var/www/html/owncloud/html/Nube_Multimedia/"+data['pathSave']+"png"])
 
 # Set block to numeric type, providing first, last frame and frames per host
 block.setNumeric( data["frame_ini"], data["frame_fin"], 1)
