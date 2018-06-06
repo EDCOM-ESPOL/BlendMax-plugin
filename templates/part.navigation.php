@@ -7,5 +7,5 @@
 	<li><a id="processJob" href="#">Trabajos en Proceso</a></li>
     <li><a id="render-edcom" class="selectedOption" href="/owncloud/index.php/apps/renderedcom/">Render Blender</a></li>
 	<li><a id="renderMax" class="selectedOption" href="/owncloud/index.php/apps/rendermax/">Render 3dMax</a></li>
-    <li><a id="renderMax" class="selectedOption" href="/owncloud/index.php/apps/renderblendmax/">Render BlendMax</a></li>
+    <li><a id="renderMax" class="selectedOption" href="/owncloud/index.php/apps/blendmaxplugin/">Render BlendMax</a></li>
 </ul>

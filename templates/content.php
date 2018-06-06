@@ -1,4 +1,4 @@
-<br><center><h2>RENDER</h2></center>
+<br><center><h2>RENDER BLENDMAX</h2></center>
 <div id="form">
    <div class="row">
       <div class="col-md-12">

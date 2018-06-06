@@ -9,7 +9,7 @@
  * @copyright IvonneBurgos 2016
  */
 
-namespace OCA\RenderBlendMax\AppInfo;
+namespace OCA\BlendMaxPlugin\AppInfo;
 
 use OCP\AppFramework\App;
 

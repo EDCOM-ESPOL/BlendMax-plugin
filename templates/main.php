@@ -1,6 +1,6 @@
 <?php
-script('renderblendmax', array('script','progressbar','php_file_tree'));
-style('renderblendmax', array('bootstrap', 'font-awesome.min','style'));
+script('blendmaxplugin', array('script','progressbar','php_file_tree'));
+style('blendmaxplugin', array('bootstrap', 'font-awesome.min','style'));
 ?>
 
 <div id="app" >
