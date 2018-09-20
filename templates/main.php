@@ -1,6 +1,6 @@
 <?php
-script('blendmaxplugin', array('script','progressbar','php_file_tree'));
-style('blendmaxplugin', array('bootstrap', 'font-awesome.min','style'));
+script('blendmaxmayaplugin', array('script','progressbar','php_file_tree'));
+style('blendmaxmayaplugin', array('bootstrap', 'font-awesome.min','style'));
 ?>
 
 <div id="app" >

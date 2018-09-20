@@ -1,15 +1,16 @@
 <?php
 /**
- * ownCloud - renderedcom
+ * ownCloud - blendmaxmayaplugin
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
- *
- * @author IvonneBurgos <irburgos@espol.edu.ec>
- * @copyright IvonneBurgos 2016
+
+ * @author Kimberly Muñoz <kipamuno@espol.edu.ec>
+ * @author Paul Valle <jpvalle@espol.edu.ec>
+ * @copyright Edcom-Espol 2017
  */
 
-namespace OCA\BlendMaxPlugin\AppInfo;
+namespace OCA\BlendMaxMayaPlugin\AppInfo;
 
 use OCP\AppFramework\App;
 

@@ -1,4 +1,4 @@
-<br><center><h2>RENDER BLENDMAX</h2></center>
+<br><center><h2>RENDER BLENDMAXMAYA</h2></center>
 <div id="form">
    <div class="row">
       <div class="col-md-12">
@@ -29,7 +29,7 @@
             <label class='labelPosition'>Frames desde</label>
          </div>
          <div id="div_ini" class="col-md-12" >
-            <input id="frame_ini" name="frame_ini" class="formElements" type="text" placeholder="1">
+            <input id="frame_ini" name="frame_ini" class="formElements" type="number" placeholder="1">
          </div>
       </div>
       <div class="col-md-6">
@@ -37,7 +37,7 @@
             <label class='labelPosition' id='label_frame_fin'>hasta</label>
          </div>
          <div class="col-md-12">
-            <input id="frame_fin" name="frame_fin" class="formElements" type="text" placeholder="99" >
+            <input id="frame_fin" name="frame_fin" class="formElements" type="number" placeholder="99" >
          </div>
       </div>
    </div>

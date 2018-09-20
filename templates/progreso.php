@@ -5,7 +5,7 @@
 	</div>
 	<div id="filesDisplay">
 		<?php
-		    $allowed = array("max","blend");
+		    $allowed = array("max","blend","mb");
 			echo php_file_tree("./data/" . $_[user] . "/files", "javascript:alert('You clicked on [link]');", $allowed, $_[user]);
 			
 			function php_file_tree($directory, $return_link, $extensions = array(), $current_user) {

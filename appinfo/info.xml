@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <info>
-    <id>blendmaxplugin</id>
-    <name>Render BlendMax Plugin</name>
+    <id>blendmaxmayaplugin</id>
+    <name>Render BlendMaxMaya Plugin</name>
     <description>First Owncloud Render app with Afanasy</description>
     <licence>AGPL</licence>
-    <author>Kimberly y Paul</author>
+    <author>Kimberly Muñoz y Jean Paul Valle</author>
     <version>0.0.1</version>
-    <namespace>BlendMaxPlugin</namespace>
+    <namespace>BlendMaxMayaPlugin</namespace>
     <category>other</category>
     <dependencies>
         <owncloud min-version="9.0" max-version="9.0" />

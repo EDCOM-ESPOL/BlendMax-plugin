@@ -1,14 +1,12 @@
 /**
- * ownCloud - renderedcom
+ * ownCloud - blendmaxmayaplugin
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
- *
- * @author IvonneBurgos <irburgos@espol.edu.ec>
- * @author RonnyValdivieso <ron_251@hotmail.com>
+
  * @author Kimberly Muñoz <kipamuno@espol.edu.ec>
  * @author Paul Valle <jpvalle@espol.edu.ec>
- * @copyright IvonneBurgos & RonnyValdivieso & KimberlyMuñoz & PaulValle 2016
+ * @copyright Edcom-Espol 2017
  */
 
 (function ($, OC) {
@@ -56,7 +54,7 @@
 			var banNumber = checkNumberRange($('#frame_ini').val(),$('#frame_fin').val());
 			if (banField == true ){
 				if (banNumber == true ){
-					var url = OC.generateUrl('/apps/blendmaxplugin/job');
+					var url = OC.generateUrl('/apps/blendmaxmayaplugin/job');
                     if($('#file_path').val().indexOf(".max") > -1){
                         var data = {
                             scene: $('#scene').val(),
@@ -66,7 +64,8 @@
                             flag: "max"
 					   };
                         //alert("max");
-                    }else{
+                    };
+                    if($('#file_path').val().indexOf(".blend") > -1){
                         var data = {
                             scene: $('#scene').val(),
                             file_path: $('#file_path').val(),
@@ -76,13 +75,22 @@
                         };
                         
                     }
-					
+					if($('#file_path').val().indexOf(".mb") > -1){
+                        var data = {
+                            scene: $('#scene').val(),
+                            file_path: $('#file_path').val(),
+                            frame_ini: $('#frame_ini').val(),
+                            frame_fin: $('#frame_fin').val(),
+                            flag: "mb"
+                        };
+                        
+                    }
                     //alert(data.flag);
 					$.post(url, data).success(function (response) {
 
 							$('#echo-result').text('Status:' + response.confirmation);
 						localStorage.setItem('id','#processJob');
-			window.location.href = '/owncloud/index.php/apps/mistrabajos/';
+			window.location.href = '/owncloud/index.php/apps/blendmaxmayaplugingui/';
 						
 						
 					});
@@ -93,17 +101,14 @@
 
 		$('#endJob').click(function () {
 			localStorage.setItem('id','#endJob');
-			window.location.href = '/owncloud/index.php/apps/mistrabajos/';
+			window.location.href = '/owncloud/index.php/apps/blendmaxmayaplugingui/';
 		});
 
 		$('#processJob').click(function () {
 			localStorage.setItem('id','#processJob');
-			window.location.href = '/owncloud/index.php/apps/mistrabajos/';
+			window.location.href = '/owncloud/index.php/apps/blendmaxmayaplugingui/';
 		});
         
-        $('#render-edcom').click(function () {
-			window.location.href = '/owncloud/index.php/apps/renderedcom/';
-		});
 
 		$('#buscar').click(function(){
 			var arrayFiles = Array();

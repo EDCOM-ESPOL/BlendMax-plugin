@@ -1,21 +1,22 @@
 <?php
 /**
- * ownCloud - Render Edcom
+ * ownCloud - blendmaxmayaplugin
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
- *
- * @author IvonneBurgos <irburgos@espol.edu.ec>
- * @copyright IvonneBurgos 2016
+
+ * @author Kimberly Muñoz <kipamuno@espol.edu.ec>
+ * @author Paul Valle <jpvalle@espol.edu.ec>
+ * @copyright Edcom-Espol 2017
  */
 
-namespace OCA\BlendMaxPlugin\AppInfo;
+namespace OCA\BlendMaxMayaPlugin\AppInfo;
 
 use OCP\AppFramework\App;
 
 require_once __DIR__ . '/autoload.php';
 
-$app = new App('blendmaxplugin');
+$app = new App('blendmaxmayaplugin');
 $container = $app->getContainer();
 
 $container->query('OCP\INavigationManager')->add(function () use ($container) {
@@ -23,21 +24,21 @@ $container->query('OCP\INavigationManager')->add(function () use ($container) {
 	$l10n = $container->query('OCP\IL10N');
 	return [
 		// the string under which your app will be referenced in owncloud
-		'id' => 'blendmaxplugin',
+		'id' => 'blendmaxmayaplugin',
 
 		// sorting weight for the navigation. The higher the number, the higher
 		// will it be listed in the navigation
 		'order' => 10,
 
 		// the route that will be shown on startup
-		'href' => $urlGenerator->linkToRoute('blendmaxplugin.page.index'),
+		'href' => $urlGenerator->linkToRoute('blendmaxmayaplugin.page.index'),
 
 		// the icon that will be shown in the navigation
 		// this file needs to exist in img/
-		'icon' => $urlGenerator->imagePath('blendmaxplugin', 'render.svg'),
+		'icon' => $urlGenerator->imagePath('blendmaxmayaplugin', 'render.svg'),
 
 		// the title of your application. This will be used in the
 		// navigation or on the settings page of your app
-		'name' => $l10n->t('Render BlendMax'),
+		'name' => $l10n->t('Render BlendMaxMaya'),
 	];
 });
