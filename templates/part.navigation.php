@@ -3,7 +3,7 @@
 	<a id="openNav">Opciones<span class="fa fa-caret-down" aria-hidden="true"></span></a>
 </div>
 <ul>
-	<li><a id="endJob" href="#">Trabajos Finalizados</a></li>
-	<li><a id="processJob" href="#">Trabajos en Proceso</a></li>
-    <li><a id="renderMax" class="selectedOption" href="/owncloud/index.php/apps/blendmaxmayaplugin/">Render BlendMaxMaya</a></li>
+	<li><a id="endJob" href="/index.php/apps/blendmaxmayaplugingui/">Trabajos Finalizados</a></li>
+	<li><a id="processJob" href="/index.php/apps/blendmaxmayaplugingui/">Trabajos en Proceso</a></li>
+    <li><a id="renderMax" class="selectedOption" href="/index.php/apps/blendmaxmayaplugin/">Render BlendMaxMaya</a></li>
 </ul>
