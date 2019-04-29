@@ -90,7 +90,7 @@
 
 							$('#echo-result').text('Status:' + response.confirmation);
 						localStorage.setItem('id','#processJob');
-			window.location.href = '/owncloud/index.php/apps/blendmaxmayaplugingui/';
+			window.location.href = '/index.php/apps/blendmaxmayaplugingui/';
 						
 						
 					});
